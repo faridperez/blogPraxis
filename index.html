@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugando con Xicohténcatl | App Educativa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Definición de la paleta de colores oscuros */
+        :root {
+            --color-primary: #182C6A; /* Azul Oscuro Profundo para acentos */
+            --color-secondary: #0F1C3F; /* Azul Naval Muy Oscuro para degradado */
+            --color-accent: #FCD34D; /* Amarillo brillante para contraste */
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Fondo muy oscuro (Tailwind gray-900) */
+            color: #E5E7EB; /* Texto muy claro (Tailwind gray-200) */
+        }
+        .header-bg {
+            /* Degradado de azul naval muy oscuro a azul oscuro profundo */
+            background: linear-gradient(135deg, var(--color-secondary), var(--color-primary));
+        }
+        .btn-primary {
+            background-color: var(--color-accent);
+            color: #111827;
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #FBBF24;
+        }
+        .content-card {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.2);
+            border-left: 5px solid var(--color-accent);
+        }
+        .tech-table th {
+            background-color: var(--color-secondary);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header-bg py-16 px-4 sm:px-6 lg:px-8 text-white rounded-b-xl shadow-lg">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-3">
+                Jugando con Xicohténcatl
+            </h1>
+            <p class="text-xl sm:text-2xl font-light opacity-90">
+                Una Aplicación Educativa para Explorar la Cultura de México
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <section class="mb-12">
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="p-6 content-card rounded-lg bg-gray-800">
+                    <h2 class="text-2xl font-bold mb-3 text-gray-100 border-b pb-2">Introducción</h2>
+                    <p class="text-gray-400">
+                        **Jugando con Xicohténcatl** es una app educativa con un enfoque lúdico, el cual se centra en que los estudiantes de educación básica puedan aprender jugando sobre la rica cultura de nuestro país. Buscamos transformar la educación cultural en una aventura digital.
+                    </p>
+                </div>
+                <div class="p-6 content-card rounded-lg bg-gray-800">
+                    <h2 class="text-2xl font-bold mb-3 text-gray-100 border-b pb-2">Definición del Problema</h2>
+                    <p class="text-gray-400">
+                        En la actualidad, la cultura es un tema al que no se le está dando la importancia que se merece en la educación. Esto se debe a varios factores, ya sea por planes de estudio desactualizados o, lo que es más preocupante, por una falta de interés temprana en los estudiantes.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12 p-8 bg-gray-800 rounded-lg shadow-xl">
+            <h2 class="text-3xl font-bold mb-6 text-center text-gray-100">Misión y Propósito Central</h2>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-3 text-blue-400 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-color-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 0113 10a18.022 18.022 0 011.952 4.5zm-1.897 4.5A18.022 18.022 0 0111 10a18.022 18.022 0 01-1.897 4.5zM17 13l-4 4-4-4"></path></svg>
+                        Objetivos Estratégicos
+                    </h3>
+                    <p class="text-gray-400">
+                        Inculcar este tema desde etapas tempranas asegura que la cultura sea una tarea más **autónoma y sencilla** en el resto de la formación académica. Garantizamos una formación que prepara a los estudiantes para vivir en un mundo con **respeto, empatía y una mente crítica**.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-xl font-semibold mb-3 text-blue-400 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-color-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        Nuestra Justificación
+                    </h3>
+                    <p class="text-gray-400">
+                        La verdadera importancia de la cultura no reside en la memorización de datos, sino en el entendimiento de que **somos parte de una historia**. A través de nuestras tradiciones y expresiones, nos conectamos unos con otros, fortaleciendo así nuestra **identidad nacional**.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6 text-gray-100 text-center">Tecnologías para la Creación del Proyecto</h2>
+            <div class="overflow-x-auto rounded-lg shadow-lg">
+                <table class="min-w-full divide-y divide-blue-400 tech-table">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider rounded-tl-lg">
+                                Tecnología
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider">
+                                Tipo
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium uppercase tracking-wider rounded-tr-lg">
+                                ¿Por qué elegirla?
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-gray-700 divide-y divide-blue-400">
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-100">Flutter (Dart)</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-300">Framework Híbrido</td>
+                            <td class="px-6 py-4 text-gray-300">Crea una sola base de código para iOS y Android, ideal para animaciones complejas y diseño atractivo.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-100">React Native (JS/TS)</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-300">Framework Híbrido</td>
+                            <td class="px-6 py-4 text-gray-300">Utiliza JavaScript, lo que facilita encontrar talento y es rápido para prototipar interfaces dinámicas.</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap font-medium text-gray-100">Unity (C#)</td>
+                            <td class="px-6 py-4 whitespace-nowrap text-gray-300">Motor de Videojuegos</td>
+                            <td class="px-6 py-4 text-gray-300">El estándar para mecánicas de juego 3D o 2D complejas, como puzles interactivos y simulaciones lúdicas.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="p-6 bg-green-900 rounded-lg border border-green-700">
+                <h3 class="text-xl font-semibold mb-3 text-green-400 flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21H12V3h8"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V3L4 14h7v7l9-11h-7z"></path></svg>
+                    Validación y Satisfacción
+                </h3>
+                <p class="text-gray-400">
+                    A través de una encuesta de satisfacción, concluimos que esta es una **idea original** y cuenta con una **alta tasa de éxito** potencial para alcanzar los objetivos propuestos. El mercado está listo para una herramienta lúdica como la nuestra.
+                </p>
+            </div>
+
+            <div class="p-6 bg-yellow-900 rounded-lg border border-yellow-700">
+                <h3 class="text-xl font-semibold mb-3 text-yellow-400 flex items-center">
+                    <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 1.1.9 2 2 2h12a2 2 0 002-2V7M4 7h16M4 7l-2 5m2-5l2 5m14-5l-2 5m2-5l2 5M12 21V9"></path></svg>
+                    Compromiso con la Mejora Continua
+                </h3>
+                <p class="text-gray-400">
+                    Los conocimientos que se irán obteniendo a lo largo de la carrera serán fundamentales para la creación, desarrollo y mejora de nuestro proyecto. Como guía: *"El conocimiento es el motor. En cada clase, encuentras la próxima gran mejora."*
+                </p>
+            </div>
+        </section>
+
+        <section class="mb-12 p-8 bg-blue-900 rounded-lg shadow-inner">
+            <h2 class="text-3xl font-bold mb-4 text-blue-200 text-center">Conclusiones Finales</h2>
+            <p class="text-lg text-blue-300 text-center">
+                Nuestra app busca llenar ese vacío que tiene la educación acerca de la cultura de una manera **efectiva**, que despierte el **interés** y, más que nada, las **ganas de aprender**. Desde tempranas etapas de la formación vamos a sentar las bases para un pleno desarrollo de este tema e inducir a que este pensamiento de valoración cultural sea prolongado en el tiempo.
+            </p>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-900 text-white py-6 mt-12">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="text-sm">&copy; 2025 Proyecto Educativo Xicohténcatl. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
